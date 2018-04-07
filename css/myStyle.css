@@ -1,0 +1,146 @@
+/* align all content in center*/
+* {
+	text-align: center;
+	max-width: 100%;
+}
+
+
+/* place my favoriate font :)*/
+body {
+	font-family:  "Helvetica", "Verdana", "sans-serif";
+}
+
+
+/* some syle on image*/
+img {
+	border-radius: 10px;
+	padding: 5px;
+	max-width: 100%;
+}
+
+
+/* some style on horizantel line*/
+hr {
+	width: 95%;
+	border-width: 5px;
+	border-color: #79a;
+	border-radius: 1em;
+}
+
+
+/* allow to small devices to click easly*/
+nav,
+a,
+button {
+	padding: 1em;
+}
+
+
+/*-- Header --*/
+
+
+/*fixed size for udacity logo*/
+.header_logo img {
+	min-width: 150px;
+	max-width: 270px;
+	padding: 10px;
+	float: left;
+}
+
+
+.header_text {
+	margin-top: 10px;
+}
+
+
+/* style on "Muhammed.otb" */
+.header_text h1 {
+	margin-left: calc(100%);
+	color: #79a;
+	display: block;
+	float: right;
+	margin-bottom: 0;
+}
+
+
+/* style on "Front-End Developer ☺" */
+.header_text p {
+	color: #79a;
+	display: block;
+	float: right;
+	margin-bottom: 0;
+}
+
+
+/*-- main --*/
+
+
+/*section should be have class*/
+.color_section {
+	color: #875D44;
+}
+
+
+/* make flex on div*/
+.section_container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+/* assign range to width and height  */
+.pic {
+	max-width: 300px;
+	max-height: 340px;
+	min-width: 250px;
+	min-height: 300px;
+}
+
+
+/* pink color on article*/
+.article_hxh {
+	background-color: #F8BDEF;
+	border-radius: 10px;
+}
+
+
+/* blue color on article*/
+.header_article,
+.article_hxh p {
+	color: #08155F;
+}
+
+
+/* some affects on heaser */
+@media screen and (max-width: 340px) {
+	.header_logo {
+		width: 150px;
+	}
+	.header_text h1 {
+		font-size: 20px;
+	}
+	.header_text p {
+		font-size: 10px;
+	}
+}
+
+
+/* some affects on heaser */
+@media screen and (min-width: 341px) and (max-width: 1100px) {
+	.header_text h1 {
+		color: silver;
+	}
+	.header_text p {
+		color: gold;
+	}
+}
+
+
+/*fixed width on body*/
+@media screen and (min-width: 1101px) {
+	body {
+		width: 1101px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
